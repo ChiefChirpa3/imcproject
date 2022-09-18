@@ -19,7 +19,7 @@ const app = (() => {
   };
 
   const toggleClass = (element, stringClass) => {
-    if (element.classList.contains(stringClass)) element.classList.remove(stringClass);else element.classList.add(stringClass);
+    if (element.classList.contains(stringClass)) element.classList.remove(stringClass); else element.classList.add(stringClass);
   };
 
   init();
@@ -41,7 +41,7 @@ let calcScrollValue = () => {
   scrollProgress.addEventListener("click", () => {
     document.documentElement.scrollTop = 0;
   });
-  scrollProgress.style.background = `conic-gradient(#03cc65 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+  scrollProgress.style.background = `conic-gradient(#ffffff ${scrollValue}%, #080808 ${scrollValue}%)`;
 };
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
